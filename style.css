@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#F5DBCB;
+    color:#6D1A36;
+    text-align: center;
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    aspect-ratio: 1/1;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 5rem;
+    border: none;
+    gap: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    color:#00FFFF;
+    background-color:#1c2826;
+    font-size: 8vmin;
+}
+
+#reset_game_btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+}
+
+#new-game-button{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:#9BC53D;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+
+#msg{
+    color:black;
+    font-size: 5vmin;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.box:hover {
+    transform: scale(1.1);
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.98);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 10;
+    width: 350px;
+    transition: all 1s ease-in-out;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.popup-content p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1c2826;
+    font-family: 'Arial', sans-serif;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-buttons button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    height: 3rem; 
+    width: 6rem;  
+}
+
+#yes-btn {
+    background-color: red;
+    color: white;
+}
+
+#no-btn {
+    background-color: green;
+    color: white;
+}
+
+.popup-buttons button:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+
+.hide {
+    display: none;
+}
+
